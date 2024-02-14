@@ -1,0 +1,119 @@
+body {
+    background-color: antiquewhite;
+}
+.header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5em;
+}
+@media all and (max-width: 1023px) {
+    .header {
+        margin-bottom: 2em;
+    }
+}
+.heart {
+    margin: auto;
+}
+.heart_img {
+    width: 100%;
+    filter: drop-shadow(20px 7px 5px black);
+    animation: growth infinite 4s linear;
+}
+@keyframes growth {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.content {
+    text-align: center;
+}
+.cat_img {
+    width: 50%;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.btn {
+    
+}
+.btn-yes {
+    background-color: green;
+    cursor: pointer;
+    font-size: 3rem;
+    border-radius: 10px;
+}
+.btn-no {
+    background-color: red;
+    font-size: 3rem;
+    border-radius: 10px;
+}
+.content_layout {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.content_content {
+    position: relative;
+    background-color: beige;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1 0.75s ease-in-out;
+}
+.mh_img {
+    width: 45%;
+}
+@keyframes fadeIn {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+video {
+    width: 10px;
+    margin-top: 3em;
+}
+.fa-solid {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    font-size: large;
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.none {
+    display: none;
+}
+@media all and (max-width: 1023px) {
+    .content_content {
+        width: 90%;
+        height: 40%;
+    }
+}
